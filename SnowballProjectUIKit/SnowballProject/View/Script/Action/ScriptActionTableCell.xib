@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScriptActionTableCell" rowHeight="187" id="6po-9Z-a30" userLabel="ScriptActionTableCell" customClass="ScriptActionTableCell" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6po-9Z-a30" id="MiI-gb-F6E">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isr-gN-NYb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="187"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-l6-eQu">
+                                <rect key="frame" x="2" y="22" width="389" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="3av-n0-n2A"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zNx-Xa-kJg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hcI-l6-eQu" secondAttribute="bottom" constant="22" id="1ir-KD-19a"/>
+                            <constraint firstItem="hcI-l6-eQu" firstAttribute="leading" secondItem="isr-gN-NYb" secondAttribute="leading" constant="2" id="RBn-Ho-p4D"/>
+                            <constraint firstItem="hcI-l6-eQu" firstAttribute="top" secondItem="isr-gN-NYb" secondAttribute="top" constant="22" id="qU9-AO-ruV"/>
+                            <constraint firstAttribute="trailing" secondItem="hcI-l6-eQu" secondAttribute="trailing" constant="2" id="riy-Uh-LEd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="isr-gN-NYb" firstAttribute="leading" secondItem="MiI-gb-F6E" secondAttribute="leading" id="9cR-Kn-Skh"/>
+                    <constraint firstItem="isr-gN-NYb" firstAttribute="top" secondItem="MiI-gb-F6E" secondAttribute="top" id="SGW-Im-Trt"/>
+                    <constraint firstAttribute="bottom" secondItem="isr-gN-NYb" secondAttribute="bottom" id="Y7V-73-9tU"/>
+                    <constraint firstAttribute="trailing" secondItem="isr-gN-NYb" secondAttribute="trailing" id="s6Y-qw-1de"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="hcI-l6-eQu" id="DJa-un-c9E"/>
+                <outlet property="containerView" destination="isr-gN-NYb" id="Lsk-5c-kkf"/>
+            </connections>
+            <point key="canvasLocation" x="170.22900763358777" y="89.788732394366207"/>
+        </tableViewCell>
+    </objects>
+</document>

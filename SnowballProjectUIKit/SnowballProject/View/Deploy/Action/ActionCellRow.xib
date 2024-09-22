@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionCellRow" rowHeight="94" id="QUh-zE-o5r" userLabel="ActionCellRow" customClass="ActionCellRow" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QUh-zE-o5r" id="WQb-Da-PJF">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EzS-fQ-NNf">
+                        <rect key="frame" x="8" y="2" width="202" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBs-He-FZ2">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0z-h8-vmK">
+                                        <rect key="frame" x="8" y="10" width="184" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.79215686269999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="N0z-h8-vmK" firstAttribute="top" secondItem="xBs-He-FZ2" secondAttribute="top" constant="10" id="6FH-hY-rIP"/>
+                                    <constraint firstAttribute="bottom" secondItem="N0z-h8-vmK" secondAttribute="bottom" constant="10" id="NHJ-Vf-PCs"/>
+                                    <constraint firstAttribute="trailing" secondItem="N0z-h8-vmK" secondAttribute="trailing" constant="10" id="V2Z-la-WXy"/>
+                                    <constraint firstItem="N0z-h8-vmK" firstAttribute="leading" secondItem="xBs-He-FZ2" secondAttribute="leading" constant="8" id="nLS-tc-6F2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EzS-fQ-NNf" firstAttribute="top" secondItem="WQb-Da-PJF" secondAttribute="top" constant="2" id="Gzo-ja-dzJ"/>
+                    <constraint firstAttribute="bottom" secondItem="EzS-fQ-NNf" secondAttribute="bottom" constant="2" id="LHN-Lk-Ffp"/>
+                    <constraint firstAttribute="trailing" secondItem="EzS-fQ-NNf" secondAttribute="trailing" constant="8" id="OWx-2f-5PT"/>
+                    <constraint firstItem="EzS-fQ-NNf" firstAttribute="leading" secondItem="WQb-Da-PJF" secondAttribute="leading" constant="8" id="k1x-Oi-J0d"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionLabel" destination="N0z-h8-vmK" id="C3I-8Q-uyG"/>
+                <outlet property="containerView" destination="EzS-fQ-NNf" id="Hay-Vm-6ky"/>
+            </connections>
+            <point key="canvasLocation" x="58.015267175572518" y="9.1549295774647899"/>
+        </tableViewCell>
+    </objects>
+</document>

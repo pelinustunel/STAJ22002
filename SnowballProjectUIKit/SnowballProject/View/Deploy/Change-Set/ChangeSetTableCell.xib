@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChangeSetTableCell" rowHeight="193" id="yeN-bg-Y94" customClass="ChangeSetTableCell" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yeN-bg-Y94" id="Ogp-tr-pfx">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-b4-dHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vBh-OB-JXx">
+                                <rect key="frame" x="2" y="12" width="389" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="86S-Lt-7Z5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nx4-sC-zYZ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vBh-OB-JXx" firstAttribute="leading" secondItem="fP8-b4-dHJ" secondAttribute="leading" constant="2" id="EIF-jF-OvQ"/>
+                            <constraint firstAttribute="bottom" secondItem="vBh-OB-JXx" secondAttribute="bottom" constant="10" id="Uea-Hh-tBI"/>
+                            <constraint firstItem="vBh-OB-JXx" firstAttribute="leading" secondItem="fP8-b4-dHJ" secondAttribute="leading" constant="2" id="V4d-QH-OXF"/>
+                            <constraint firstAttribute="trailing" secondItem="vBh-OB-JXx" secondAttribute="trailing" constant="2" id="Zwl-Vb-oVq"/>
+                            <constraint firstAttribute="trailing" secondItem="vBh-OB-JXx" secondAttribute="trailing" constant="2" id="mL6-c3-Fyj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fP8-b4-dHJ" firstAttribute="leading" secondItem="Ogp-tr-pfx" secondAttribute="leading" id="N5w-pN-QEN"/>
+                    <constraint firstAttribute="trailing" secondItem="fP8-b4-dHJ" secondAttribute="trailing" id="WJs-EM-daf"/>
+                    <constraint firstAttribute="bottom" secondItem="fP8-b4-dHJ" secondAttribute="bottom" id="lhu-nf-Quy"/>
+                    <constraint firstItem="fP8-b4-dHJ" firstAttribute="top" secondItem="Ogp-tr-pfx" secondAttribute="top" id="wgY-gC-LsW"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="vBh-OB-JXx" id="HYz-DW-6nJ"/>
+                <outlet property="containerView" destination="fP8-b4-dHJ" id="ov8-PD-Sck"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="31.338028169014088"/>
+        </tableViewCell>
+    </objects>
+</document>

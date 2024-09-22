@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScriptChangeSetTableCell" rowHeight="193" id="dkg-30-YFZ" userLabel="ScriptChangeSetTableCell" customClass="ScriptChangeSetTableCell" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dkg-30-YFZ" id="Lzd-JN-WaV">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I9-r9-Rpa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kzp-KR-APF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c4h-JT-u1f">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kzp-KR-APF" secondAttribute="bottom" id="14M-Wh-7hT"/>
+                            <constraint firstItem="kzp-KR-APF" firstAttribute="top" secondItem="3I9-r9-Rpa" secondAttribute="top" id="bAF-Um-HHj"/>
+                            <constraint firstAttribute="trailing" secondItem="kzp-KR-APF" secondAttribute="trailing" id="fc1-1T-hbl"/>
+                            <constraint firstItem="kzp-KR-APF" firstAttribute="leading" secondItem="3I9-r9-Rpa" secondAttribute="leading" id="gNs-bH-Vyh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3I9-r9-Rpa" firstAttribute="top" secondItem="Lzd-JN-WaV" secondAttribute="top" id="0cL-PN-hPO"/>
+                    <constraint firstItem="3I9-r9-Rpa" firstAttribute="leading" secondItem="Lzd-JN-WaV" secondAttribute="leading" id="eib-ZC-jMD"/>
+                    <constraint firstAttribute="bottom" secondItem="3I9-r9-Rpa" secondAttribute="bottom" id="kn0-of-xRf"/>
+                    <constraint firstAttribute="trailing" secondItem="3I9-r9-Rpa" secondAttribute="trailing" id="tpk-f9-dWd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="kzp-KR-APF" id="pmJ-T5-8hO"/>
+                <outlet property="containerView" destination="3I9-r9-Rpa" id="Nvl-dJ-sd9"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="31.338028169014088"/>
+        </tableViewCell>
+    </objects>
+</document>

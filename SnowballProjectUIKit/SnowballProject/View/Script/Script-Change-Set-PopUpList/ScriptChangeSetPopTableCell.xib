@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScriptChangeSetPopTableCell" rowHeight="141" id="I5H-p4-LkQ" userLabel="ScriptChangeSetPopTableCell" customClass="ScriptChangeSetPopTableCell" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I5H-p4-LkQ" id="NAg-pI-5Cr">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-rX-K1q">
+                        <rect key="frame" x="8" y="2" width="330" height="137"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-h0-th8">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLb-Lg-wGu">
+                                        <rect key="frame" x="30" y="29" width="185" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.79215686269999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3l-Gf-oVN">
+                                        <rect key="frame" x="30" y="80.666666666666671" width="300" height="14.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="mcG-ee-zYI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="a3l-Gf-oVN" firstAttribute="leading" secondItem="wdr-h0-th8" secondAttribute="leading" constant="30" id="0a6-q9-Nfc"/>
+                                    <constraint firstAttribute="trailing" secondItem="uLb-Lg-wGu" secondAttribute="trailing" constant="115" id="VlC-0l-LPO"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3l-Gf-oVN" secondAttribute="trailing" constant="15" id="aG9-ws-JNb"/>
+                                    <constraint firstAttribute="bottom" secondItem="a3l-Gf-oVN" secondAttribute="bottom" constant="42" id="csK-o3-Usb"/>
+                                    <constraint firstItem="uLb-Lg-wGu" firstAttribute="leading" secondItem="wdr-h0-th8" secondAttribute="leading" constant="30" id="pNy-3P-2ZS"/>
+                                    <constraint firstItem="uLb-Lg-wGu" firstAttribute="top" secondItem="wdr-h0-th8" secondAttribute="top" constant="29" id="xjf-Bg-wcQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dNb-rX-K1q" secondAttribute="bottom" constant="2" id="LKf-eB-Ni3"/>
+                    <constraint firstAttribute="trailing" secondItem="dNb-rX-K1q" secondAttribute="trailing" constant="8" id="MWs-sm-4DJ"/>
+                    <constraint firstItem="dNb-rX-K1q" firstAttribute="leading" secondItem="NAg-pI-5Cr" secondAttribute="leading" constant="8" id="g0M-TJ-dqE"/>
+                    <constraint firstItem="dNb-rX-K1q" firstAttribute="top" secondItem="NAg-pI-5Cr" secondAttribute="top" constant="2" id="jlF-22-IVF"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="commentLabel" destination="a3l-Gf-oVN" id="AGU-rU-TtH"/>
+                <outlet property="containerView" destination="dNb-rX-K1q" id="xBc-Tp-CxX"/>
+                <outlet property="idLabel" destination="uLb-Lg-wGu" id="8t0-t6-qDb"/>
+            </connections>
+            <point key="canvasLocation" x="154.96183206106869" y="25.704225352112676"/>
+        </tableViewCell>
+    </objects>
+</document>

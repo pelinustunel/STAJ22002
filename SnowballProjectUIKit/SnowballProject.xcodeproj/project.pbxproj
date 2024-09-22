@@ -1,0 +1,1277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632634DB2C54168C0050A89B /* DeployViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632634DA2C54168C0050A89B /* DeployViewController.xib */; };
+		632634DC2C54168C0050A89B /* DeployViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632634D92C54168C0050A89B /* DeployViewController.swift */; };
+		632634EE2C54180E0050A89B /* ScriptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632634ED2C54180E0050A89B /* ScriptViewController.xib */; };
+		632634EF2C54180E0050A89B /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632634EC2C54180E0050A89B /* ScriptViewController.swift */; };
+		632634F22C5418510050A89B /* ScriptTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632634F12C5418510050A89B /* ScriptTableCell.xib */; };
+		632634F32C5418510050A89B /* ScriptTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632634F02C5418510050A89B /* ScriptTableCell.swift */; };
+		6329934F2C6F69E000400852 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6329934E2C6F69E000400852 /* View.xib */; };
+		632993512C711EA200400852 /* FilesConfirmationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632993502C711EA200400852 /* FilesConfirmationTableCell.xib */; };
+		632993532C711ED000400852 /* FilesConfirmationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632993522C711ED000400852 /* FilesConfirmationTableCell.swift */; };
+		632993552C7140DF00400852 /* FilesConfirmationCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632993542C7140DF00400852 /* FilesConfirmationCellRow.swift */; };
+		632993572C7140EE00400852 /* FilesConfirmationCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632993562C7140EE00400852 /* FilesConfirmationCellRow.xib */; };
+		632993932C746BE600400852 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632993922C746BE600400852 /* BaseService.swift */; };
+		632993962C746E6B00400852 /* BaseServiceContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632993952C746E6B00400852 /* BaseServiceContracts.swift */; };
+		634244EF2C69FDD8003B6E9A /* ScriptFilesCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634244EE2C69FDD8003B6E9A /* ScriptFilesCellRow.swift */; };
+		634244F32C69FDFB003B6E9A /* ScriptFilesCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634244F22C69FDFB003B6E9A /* ScriptFilesCellRow.xib */; };
+		6362EDF42C6A361C0066B948 /* ActionCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EDF32C6A361C0066B948 /* ActionCellRow.xib */; };
+		6362EDF62C6A36250066B948 /* ActionCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EDF52C6A36250066B948 /* ActionCellRow.swift */; };
+		6362EDF82C6A362E0066B948 /* ActionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EDF72C6A362E0066B948 /* ActionTableCell.swift */; };
+		6362EDFA2C6A363A0066B948 /* ActionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EDF92C6A363A0066B948 /* ActionTableCell.xib */; };
+		6362EDFD2C6A3AB50066B948 /* EnvironmentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EDFC2C6A3AB50066B948 /* EnvironmentTableCell.xib */; };
+		6362EDFF2C6A3AC00066B948 /* EnvironmentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EDFE2C6A3AC00066B948 /* EnvironmentTableCell.swift */; };
+		6362EE012C6A3ACA0066B948 /* EnvironmentRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EE002C6A3ACA0066B948 /* EnvironmentRowCell.swift */; };
+		6362EE032C6A3AD70066B948 /* EnvironmentRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EE022C6A3AD70066B948 /* EnvironmentRowCell.xib */; };
+		6362EE062C6B2DD20066B948 /* ChangeSetPopTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EE052C6B2DD20066B948 /* ChangeSetPopTable.xib */; };
+		6362EE082C6B2DFF0066B948 /* ChangeSetPopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EE072C6B2DFF0066B948 /* ChangeSetPopTable.swift */; };
+		6362EE0A2C6B2EBC0066B948 /* ChangeSetPopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EE092C6B2EBC0066B948 /* ChangeSetPopTableCell.swift */; };
+		6362EE0C2C6B2EC80066B948 /* ChangeSetPopTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362EE0B2C6B2EC80066B948 /* ChangeSetPopTableCell.xib */; };
+		6362EE0F2C6B36D70066B948 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362EE0E2C6B36D70066B948 /* CustomHeaderView.swift */; };
+		636831202C526B5000AD23B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368311F2C526B5000AD23B6 /* AppDelegate.swift */; };
+		636831292C526B5100AD23B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636831282C526B5100AD23B6 /* Assets.xcassets */; };
+		6368312C2C526B5100AD23B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6368312B2C526B5100AD23B6 /* Base */; };
+		636831342C526C2400AD23B6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636831332C526C2400AD23B6 /* LoginView.xib */; };
+		636991252C56AD8F00967747 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636991242C56AD8F00967747 /* MainTabBarController.swift */; };
+		636991272C56BF8200967747 /* MainTabBarController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636991262C56BF8200967747 /* MainTabBarController2.swift */; };
+		636991292C56C01900967747 /* ApprovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636991282C56C01900967747 /* ApprovementsViewController.xib */; };
+		6369912D2C56C58500967747 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369912C2C56C58500967747 /* UIViewController+Extension.swift */; };
+		636991312C57673B00967747 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636991302C57673B00967747 /* UITabBarController+Extension.swift */; };
+		6371AC3C2C60A8C000A13A23 /* PipelineTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6371AC3B2C60A8C000A13A23 /* PipelineTableCell.xib */; };
+		6371AC3E2C60A8E400A13A23 /* PipelineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371AC3D2C60A8E400A13A23 /* PipelineTableCell.swift */; };
+		6371AC402C60A90D00A13A23 /* PipelineCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6371AC3F2C60A90D00A13A23 /* PipelineCellRow.xib */; };
+		6371AC422C60AEAD00A13A23 /* PipelineCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371AC412C60AEAD00A13A23 /* PipelineCellRow.swift */; };
+		6371AC482C60B8D800A13A23 /* ChangeSetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6371AC472C60B8D800A13A23 /* ChangeSetTableCell.xib */; };
+		6371AC4A2C60B8FC00A13A23 /* ChangeSetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371AC492C60B8FC00A13A23 /* ChangeSetTableCell.swift */; };
+		6371AC4C2C60B91B00A13A23 /* ChangeSetCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6371AC4B2C60B91B00A13A23 /* ChangeSetCellRow.xib */; };
+		6371AC4E2C60EA9500A13A23 /* ChangeSetCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371AC4D2C60EA9500A13A23 /* ChangeSetCellRow.swift */; };
+		6371AC502C60FDC800A13A23 /* DeployDetailMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371AC4F2C60FDC800A13A23 /* DeployDetailMainVC.swift */; };
+		6372A44C2C5A281C008DFAA2 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372A44B2C5A281C008DFAA2 /* ShimmerView.swift */; };
+		6372A4542C5A40BB008DFAA2 /* LogShimmerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372A4532C5A40BB008DFAA2 /* LogShimmerTableCell.swift */; };
+		6372A4562C5A40D1008DFAA2 /* LogShimmerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6372A4552C5A40D1008DFAA2 /* LogShimmerTableCell.xib */; };
+		6372A45D2C5A44E1008DFAA2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372A45C2C5A44E1008DFAA2 /* Status.swift */; };
+		6372A45F2C5B59AA008DFAA2 /* ScriptMainDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6372A45E2C5B59AA008DFAA2 /* ScriptMainDetailVC.xib */; };
+		637319322C5B961200F20395 /* StatusS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637319312C5B961200F20395 /* StatusS.swift */; };
+		6373193C2C5CFD0800F20395 /* DeployDetailViewCellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6373193B2C5CFD0800F20395 /* DeployDetailViewCellTable.xib */; };
+		6373193E2C5CFD3F00F20395 /* DeployDetailMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6373193D2C5CFD3F00F20395 /* DeployDetailMainVC.xib */; };
+		637319402C5CFD6600F20395 /* DeployDetailViewCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373193F2C5CFD6600F20395 /* DeployDetailViewCellTable.swift */; };
+		637332B62C6DDCAD00BA787A /* ScriptTraineeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637332B52C6DDCAD00BA787A /* ScriptTraineeCell.xib */; };
+		6377C2FC2C805D130081485C /* SSLPinningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C2FB2C805D130081485C /* SSLPinningManager.swift */; };
+		6377C3222C806FD10081485C /* PinningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C3212C806FD10081485C /* PinningManager.swift */; };
+		6377C32A2C843E6D0081485C /* SnowballProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C3292C843E6D0081485C /* SnowballProjectUITests.swift */; };
+		6377C32C2C843E6D0081485C /* SnowballProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C32B2C843E6D0081485C /* SnowballProjectUITestsLaunchTests.swift */; };
+		6377C3352C872A930081485C /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C3342C872A930081485C /* DatabaseHelper.swift */; };
+		6377C3382C883F4D0081485C /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6377C3372C883F4D0081485C /* CryptoSwift */; };
+		63890ABA2C6DF33B00A43170 /* ScriptCustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890AB92C6DF33B00A43170 /* ScriptCustomHeaderView.swift */; };
+		63890ABD2C6DF3E200A43170 /* ScriptEnvironmentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890ABC2C6DF3E200A43170 /* ScriptEnvironmentTableCell.swift */; };
+		63890ABF2C6DF3EB00A43170 /* ScriptEnvironmentRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890ABE2C6DF3EB00A43170 /* ScriptEnvironmentRowCell.swift */; };
+		63890AC12C6DF3F500A43170 /* ScriptEnvironmentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AC02C6DF3F500A43170 /* ScriptEnvironmentTableCell.xib */; };
+		63890AC32C6DF40100A43170 /* ScriptEnvironmentRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AC22C6DF40100A43170 /* ScriptEnvironmentRowCell.xib */; };
+		63890AC62C6DF4A500A43170 /* ScriptActionCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AC52C6DF4A500A43170 /* ScriptActionCellRow.xib */; };
+		63890AC82C6DF4B200A43170 /* ScriptActionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AC72C6DF4B200A43170 /* ScriptActionTableCell.xib */; };
+		63890ACA2C6DF4BE00A43170 /* ScriptActionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890AC92C6DF4BE00A43170 /* ScriptActionTableCell.swift */; };
+		63890ACC2C6DF4D000A43170 /* ScriptActionCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890ACB2C6DF4D000A43170 /* ScriptActionCellRow.swift */; };
+		63890ACF2C6DF58100A43170 /* ScriptChangeSetPopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890ACE2C6DF58100A43170 /* ScriptChangeSetPopTable.swift */; };
+		63890AD12C6DF58B00A43170 /* ScriptChangeSetPopTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AD02C6DF58B00A43170 /* ScriptChangeSetPopTable.xib */; };
+		63890AD32C6DF59900A43170 /* ScriptChangeSetPopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890AD22C6DF59900A43170 /* ScriptChangeSetPopTableCell.swift */; };
+		63890AD52C6DF5A100A43170 /* ScriptChangeSetPopTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AD42C6DF5A100A43170 /* ScriptChangeSetPopTableCell.xib */; };
+		63890AD72C6E19EF00A43170 /* ScriptFilesCellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63890AD62C6E19EF00A43170 /* ScriptFilesCellTable.xib */; };
+		63890AD92C6E19FD00A43170 /* ScriptFilesCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63890AD82C6E19FD00A43170 /* ScriptFilesCellTable.swift */; };
+		638E63532C5F95F0007C4DFD /* DeployDetailCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E63522C5F95F0007C4DFD /* DeployDetailCellRow.swift */; };
+		638E63552C5F9627007C4DFD /* DeployDetailCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638E63542C5F9627007C4DFD /* DeployDetailCellRow.xib */; };
+		639FF0012C6961570047815D /* ScriptMainDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0002C6961570047815D /* ScriptMainDetailVC.swift */; };
+		639FF0032C69619C0047815D /* ScriptDetailViewCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0022C69619C0047815D /* ScriptDetailViewCellTable.swift */; };
+		639FF0052C6961A90047815D /* ScriptDetailViewCellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF0042C6961A90047815D /* ScriptDetailViewCellTable.xib */; };
+		639FF0072C6961BB0047815D /* ScriptDetailCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF0062C6961BB0047815D /* ScriptDetailCellRow.xib */; };
+		639FF0092C6961C60047815D /* ScriptDetailCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0082C6961C60047815D /* ScriptDetailCellRow.swift */; };
+		639FF00B2C69630D0047815D /* ScriptPipelineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF00A2C69630D0047815D /* ScriptPipelineTableCell.swift */; };
+		639FF00D2C69631B0047815D /* ScriptPipelineTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF00C2C69631B0047815D /* ScriptPipelineTableCell.xib */; };
+		639FF00F2C69632F0047815D /* ScriptPipelineCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF00E2C69632F0047815D /* ScriptPipelineCellRow.xib */; };
+		639FF0112C69633B0047815D /* ScriptPipelineCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0102C69633B0047815D /* ScriptPipelineCellRow.swift */; };
+		639FF0132C69642F0047815D /* ScriptChangeSetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0122C69642F0047815D /* ScriptChangeSetTableCell.swift */; };
+		639FF0152C69643D0047815D /* ScriptChangeSetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF0142C69643D0047815D /* ScriptChangeSetTableCell.xib */; };
+		639FF0172C6964540047815D /* ScriptChangeSetCellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF0162C6964540047815D /* ScriptChangeSetCellRow.swift */; };
+		639FF0192C69645F0047815D /* ScriptChangeSetCellRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639FF0182C69645F0047815D /* ScriptChangeSetCellRow.xib */; };
+		63BC01FC2C553EE2002F2849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BC01FB2C553EE2002F2849 /* Main.storyboard */; };
+		63BC01FE2C553F65002F2849 /* DeployTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BC01FD2C553F65002F2849 /* DeployTableCell.xib */; };
+		63BC02022C55404E002F2849 /* DeployTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC02012C55404E002F2849 /* DeployTableCell.swift */; };
+		63BC02042C5542B6002F2849 /* LogTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BC02032C5542B6002F2849 /* LogTableCell.xib */; };
+		63BC02062C5542C9002F2849 /* LogTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC02052C5542C9002F2849 /* LogTableCell.swift */; };
+		63BC02082C5544D8002F2849 /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BC02072C5544D8002F2849 /* LogViewController.xib */; };
+		63BC020A2C554530002F2849 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC02092C554530002F2849 /* LogViewController.swift */; };
+		63BC020C2C554647002F2849 /* ApprovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC020B2C554647002F2849 /* ApprovementsViewController.swift */; };
+		63BC02122C55467F002F2849 /* ApprovementsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BC02112C55467F002F2849 /* ApprovementsTableCell.xib */; };
+		63BC02142C55468E002F2849 /* ApprovementsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC02132C55468E002F2849 /* ApprovementsTableCell.swift */; };
+		63BC02312C554A07002F2849 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC02302C554A07002F2849 /* LoginViewController.swift */; };
+		63C9CB4A2C7478FF00F95B3C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63C9CB492C7478FF00F95B3C /* Alamofire */; };
+		63C9CB4C2C748D2900F95B3C /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB4B2C748D2900F95B3C /* LoginContract.swift */; };
+		63C9CB4E2C748D3500F95B3C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB4D2C748D3500F95B3C /* LoginService.swift */; };
+		63C9CB502C74AFA800F95B3C /* ContractBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB4F2C74AFA800F95B3C /* ContractBase.swift */; };
+		63C9CB522C75B81D00F95B3C /* ApprovementContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB512C75B81D00F95B3C /* ApprovementContract.swift */; };
+		63C9CB582C75E01C00F95B3C /* ScriptContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB572C75E01C00F95B3C /* ScriptContract.swift */; };
+		63C9CB5C2C75E03700F95B3C /* DeployContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB5B2C75E03700F95B3C /* DeployContract.swift */; };
+		63C9CB602C75E04D00F95B3C /* LogContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB5F2C75E04D00F95B3C /* LogContract.swift */; };
+		63C9CB632C7611E000F95B3C /* JWTAccessTokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB622C7611E000F95B3C /* JWTAccessTokenInterceptor.swift */; };
+		63C9CB672C77254900F95B3C /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB662C77254900F95B3C /* TokenStore.swift */; };
+		63C9CB6D2C77786B00F95B3C /* AlamofireNetworkActivityLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 63C9CB6C2C77786B00F95B3C /* AlamofireNetworkActivityLogger */; };
+		63C9CB6F2C7BC2CF00F95B3C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB6E2C7BC2CF00F95B3C /* SessionStore.swift */; };
+		63C9CB712C7BC4A900F95B3C /* RefreshTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB702C7BC4A900F95B3C /* RefreshTokenService.swift */; };
+		63C9CB732C7BC66200F95B3C /* RefreshTokenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB722C7BC66200F95B3C /* RefreshTokenContract.swift */; };
+		63C9CB752C7C560600F95B3C /* ClearCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB742C7C560600F95B3C /* ClearCacheService.swift */; };
+		63C9CB772C7C593400F95B3C /* ClearCacheContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9CB762C7C593400F95B3C /* ClearCacheContract.swift */; };
+		D60BA55099D211EA74F59B41 /* Pods_SnowballProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B93A320AF16F81BAFECF3F0 /* Pods_SnowballProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6377C32D2C843E6D0081485C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636831142C526B5000AD23B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6368311B2C526B5000AD23B6;
+			remoteInfo = SnowballProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B93A320AF16F81BAFECF3F0 /* Pods_SnowballProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowballProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632634D92C54168C0050A89B /* DeployViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployViewController.swift; sourceTree = "<group>"; };
+		632634DA2C54168C0050A89B /* DeployViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeployViewController.xib; sourceTree = "<group>"; };
+		632634EC2C54180E0050A89B /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
+		632634ED2C54180E0050A89B /* ScriptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptViewController.xib; sourceTree = "<group>"; };
+		632634F02C5418510050A89B /* ScriptTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptTableCell.swift; sourceTree = "<group>"; };
+		632634F12C5418510050A89B /* ScriptTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptTableCell.xib; sourceTree = "<group>"; };
+		6329934E2C6F69E000400852 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		632993502C711EA200400852 /* FilesConfirmationTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesConfirmationTableCell.xib; sourceTree = "<group>"; };
+		632993522C711ED000400852 /* FilesConfirmationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesConfirmationTableCell.swift; sourceTree = "<group>"; };
+		632993542C7140DF00400852 /* FilesConfirmationCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesConfirmationCellRow.swift; sourceTree = "<group>"; };
+		632993562C7140EE00400852 /* FilesConfirmationCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesConfirmationCellRow.xib; sourceTree = "<group>"; };
+		632993922C746BE600400852 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		632993952C746E6B00400852 /* BaseServiceContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceContracts.swift; sourceTree = "<group>"; };
+		634244EE2C69FDD8003B6E9A /* ScriptFilesCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptFilesCellRow.swift; sourceTree = "<group>"; };
+		634244F22C69FDFB003B6E9A /* ScriptFilesCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptFilesCellRow.xib; sourceTree = "<group>"; };
+		6362EDF32C6A361C0066B948 /* ActionCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionCellRow.xib; sourceTree = "<group>"; };
+		6362EDF52C6A36250066B948 /* ActionCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCellRow.swift; sourceTree = "<group>"; };
+		6362EDF72C6A362E0066B948 /* ActionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTableCell.swift; sourceTree = "<group>"; };
+		6362EDF92C6A363A0066B948 /* ActionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionTableCell.xib; sourceTree = "<group>"; };
+		6362EDFC2C6A3AB50066B948 /* EnvironmentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentTableCell.xib; sourceTree = "<group>"; };
+		6362EDFE2C6A3AC00066B948 /* EnvironmentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTableCell.swift; sourceTree = "<group>"; };
+		6362EE002C6A3ACA0066B948 /* EnvironmentRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentRowCell.swift; sourceTree = "<group>"; };
+		6362EE022C6A3AD70066B948 /* EnvironmentRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentRowCell.xib; sourceTree = "<group>"; };
+		6362EE052C6B2DD20066B948 /* ChangeSetPopTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSetPopTable.xib; sourceTree = "<group>"; };
+		6362EE072C6B2DFF0066B948 /* ChangeSetPopTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSetPopTable.swift; sourceTree = "<group>"; };
+		6362EE092C6B2EBC0066B948 /* ChangeSetPopTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSetPopTableCell.swift; sourceTree = "<group>"; };
+		6362EE0B2C6B2EC80066B948 /* ChangeSetPopTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSetPopTableCell.xib; sourceTree = "<group>"; };
+		6362EE0E2C6B36D70066B948 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		6368311C2C526B5000AD23B6 /* SnowballProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowballProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6368311F2C526B5000AD23B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		636831282C526B5100AD23B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6368312B2C526B5100AD23B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6368312D2C526B5100AD23B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636831332C526C2400AD23B6 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		636991242C56AD8F00967747 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		636991262C56BF8200967747 /* MainTabBarController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController2.swift; sourceTree = "<group>"; };
+		636991282C56C01900967747 /* ApprovementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApprovementsViewController.xib; sourceTree = "<group>"; };
+		6369912C2C56C58500967747 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		636991302C57673B00967747 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		6371AC3B2C60A8C000A13A23 /* PipelineTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PipelineTableCell.xib; sourceTree = "<group>"; };
+		6371AC3D2C60A8E400A13A23 /* PipelineTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTableCell.swift; sourceTree = "<group>"; };
+		6371AC3F2C60A90D00A13A23 /* PipelineCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PipelineCellRow.xib; sourceTree = "<group>"; };
+		6371AC412C60AEAD00A13A23 /* PipelineCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineCellRow.swift; sourceTree = "<group>"; };
+		6371AC472C60B8D800A13A23 /* ChangeSetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSetTableCell.xib; sourceTree = "<group>"; };
+		6371AC492C60B8FC00A13A23 /* ChangeSetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSetTableCell.swift; sourceTree = "<group>"; };
+		6371AC4B2C60B91B00A13A23 /* ChangeSetCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSetCellRow.xib; sourceTree = "<group>"; };
+		6371AC4D2C60EA9500A13A23 /* ChangeSetCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSetCellRow.swift; sourceTree = "<group>"; };
+		6371AC4F2C60FDC800A13A23 /* DeployDetailMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployDetailMainVC.swift; sourceTree = "<group>"; };
+		6372A44B2C5A281C008DFAA2 /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		6372A4532C5A40BB008DFAA2 /* LogShimmerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogShimmerTableCell.swift; sourceTree = "<group>"; };
+		6372A4552C5A40D1008DFAA2 /* LogShimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogShimmerTableCell.xib; sourceTree = "<group>"; };
+		6372A45C2C5A44E1008DFAA2 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		6372A45E2C5B59AA008DFAA2 /* ScriptMainDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptMainDetailVC.xib; sourceTree = "<group>"; };
+		637319312C5B961200F20395 /* StatusS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusS.swift; sourceTree = "<group>"; };
+		6373193B2C5CFD0800F20395 /* DeployDetailViewCellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeployDetailViewCellTable.xib; sourceTree = "<group>"; };
+		6373193D2C5CFD3F00F20395 /* DeployDetailMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeployDetailMainVC.xib; sourceTree = "<group>"; };
+		6373193F2C5CFD6600F20395 /* DeployDetailViewCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployDetailViewCellTable.swift; sourceTree = "<group>"; };
+		637332B52C6DDCAD00BA787A /* ScriptTraineeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptTraineeCell.xib; sourceTree = "<group>"; };
+		6377C2FB2C805D130081485C /* SSLPinningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningManager.swift; sourceTree = "<group>"; };
+		6377C3212C806FD10081485C /* PinningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinningManager.swift; sourceTree = "<group>"; };
+		6377C3272C843E6D0081485C /* SnowballProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowballProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6377C3292C843E6D0081485C /* SnowballProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballProjectUITests.swift; sourceTree = "<group>"; };
+		6377C32B2C843E6D0081485C /* SnowballProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6377C3342C872A930081485C /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		63890AB92C6DF33B00A43170 /* ScriptCustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCustomHeaderView.swift; sourceTree = "<group>"; };
+		63890ABC2C6DF3E200A43170 /* ScriptEnvironmentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEnvironmentTableCell.swift; sourceTree = "<group>"; };
+		63890ABE2C6DF3EB00A43170 /* ScriptEnvironmentRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEnvironmentRowCell.swift; sourceTree = "<group>"; };
+		63890AC02C6DF3F500A43170 /* ScriptEnvironmentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptEnvironmentTableCell.xib; sourceTree = "<group>"; };
+		63890AC22C6DF40100A43170 /* ScriptEnvironmentRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptEnvironmentRowCell.xib; sourceTree = "<group>"; };
+		63890AC52C6DF4A500A43170 /* ScriptActionCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptActionCellRow.xib; sourceTree = "<group>"; };
+		63890AC72C6DF4B200A43170 /* ScriptActionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptActionTableCell.xib; sourceTree = "<group>"; };
+		63890AC92C6DF4BE00A43170 /* ScriptActionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptActionTableCell.swift; sourceTree = "<group>"; };
+		63890ACB2C6DF4D000A43170 /* ScriptActionCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptActionCellRow.swift; sourceTree = "<group>"; };
+		63890ACE2C6DF58100A43170 /* ScriptChangeSetPopTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptChangeSetPopTable.swift; sourceTree = "<group>"; };
+		63890AD02C6DF58B00A43170 /* ScriptChangeSetPopTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptChangeSetPopTable.xib; sourceTree = "<group>"; };
+		63890AD22C6DF59900A43170 /* ScriptChangeSetPopTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptChangeSetPopTableCell.swift; sourceTree = "<group>"; };
+		63890AD42C6DF5A100A43170 /* ScriptChangeSetPopTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptChangeSetPopTableCell.xib; sourceTree = "<group>"; };
+		63890AD62C6E19EF00A43170 /* ScriptFilesCellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptFilesCellTable.xib; sourceTree = "<group>"; };
+		63890AD82C6E19FD00A43170 /* ScriptFilesCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptFilesCellTable.swift; sourceTree = "<group>"; };
+		638E63522C5F95F0007C4DFD /* DeployDetailCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployDetailCellRow.swift; sourceTree = "<group>"; };
+		638E63542C5F9627007C4DFD /* DeployDetailCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeployDetailCellRow.xib; sourceTree = "<group>"; };
+		639FF0002C6961570047815D /* ScriptMainDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptMainDetailVC.swift; sourceTree = "<group>"; };
+		639FF0022C69619C0047815D /* ScriptDetailViewCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptDetailViewCellTable.swift; sourceTree = "<group>"; };
+		639FF0042C6961A90047815D /* ScriptDetailViewCellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptDetailViewCellTable.xib; sourceTree = "<group>"; };
+		639FF0062C6961BB0047815D /* ScriptDetailCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptDetailCellRow.xib; sourceTree = "<group>"; };
+		639FF0082C6961C60047815D /* ScriptDetailCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptDetailCellRow.swift; sourceTree = "<group>"; };
+		639FF00A2C69630D0047815D /* ScriptPipelineTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPipelineTableCell.swift; sourceTree = "<group>"; };
+		639FF00C2C69631B0047815D /* ScriptPipelineTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptPipelineTableCell.xib; sourceTree = "<group>"; };
+		639FF00E2C69632F0047815D /* ScriptPipelineCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptPipelineCellRow.xib; sourceTree = "<group>"; };
+		639FF0102C69633B0047815D /* ScriptPipelineCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPipelineCellRow.swift; sourceTree = "<group>"; };
+		639FF0122C69642F0047815D /* ScriptChangeSetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptChangeSetTableCell.swift; sourceTree = "<group>"; };
+		639FF0142C69643D0047815D /* ScriptChangeSetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptChangeSetTableCell.xib; sourceTree = "<group>"; };
+		639FF0162C6964540047815D /* ScriptChangeSetCellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptChangeSetCellRow.swift; sourceTree = "<group>"; };
+		639FF0182C69645F0047815D /* ScriptChangeSetCellRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptChangeSetCellRow.xib; sourceTree = "<group>"; };
+		63BC01FB2C553EE2002F2849 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		63BC01FD2C553F65002F2849 /* DeployTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeployTableCell.xib; sourceTree = "<group>"; };
+		63BC02012C55404E002F2849 /* DeployTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployTableCell.swift; sourceTree = "<group>"; };
+		63BC02032C5542B6002F2849 /* LogTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogTableCell.xib; sourceTree = "<group>"; };
+		63BC02052C5542C9002F2849 /* LogTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableCell.swift; sourceTree = "<group>"; };
+		63BC02072C5544D8002F2849 /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		63BC02092C554530002F2849 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		63BC020B2C554647002F2849 /* ApprovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovementsViewController.swift; sourceTree = "<group>"; };
+		63BC02112C55467F002F2849 /* ApprovementsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApprovementsTableCell.xib; sourceTree = "<group>"; };
+		63BC02132C55468E002F2849 /* ApprovementsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovementsTableCell.swift; sourceTree = "<group>"; };
+		63BC02302C554A07002F2849 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		63C9CB4B2C748D2900F95B3C /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		63C9CB4D2C748D3500F95B3C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		63C9CB4F2C74AFA800F95B3C /* ContractBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractBase.swift; sourceTree = "<group>"; };
+		63C9CB512C75B81D00F95B3C /* ApprovementContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovementContract.swift; sourceTree = "<group>"; };
+		63C9CB572C75E01C00F95B3C /* ScriptContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptContract.swift; sourceTree = "<group>"; };
+		63C9CB5B2C75E03700F95B3C /* DeployContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployContract.swift; sourceTree = "<group>"; };
+		63C9CB5F2C75E04D00F95B3C /* LogContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogContract.swift; sourceTree = "<group>"; };
+		63C9CB622C7611E000F95B3C /* JWTAccessTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTAccessTokenInterceptor.swift; sourceTree = "<group>"; };
+		63C9CB662C77254900F95B3C /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		63C9CB6E2C7BC2CF00F95B3C /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		63C9CB702C7BC4A900F95B3C /* RefreshTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenService.swift; sourceTree = "<group>"; };
+		63C9CB722C7BC66200F95B3C /* RefreshTokenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenContract.swift; sourceTree = "<group>"; };
+		63C9CB742C7C560600F95B3C /* ClearCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCacheService.swift; sourceTree = "<group>"; };
+		63C9CB762C7C593400F95B3C /* ClearCacheContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCacheContract.swift; sourceTree = "<group>"; };
+		9C9A1A997A66C66504F6DE52 /* Pods-SnowballProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowballProject.debug.xcconfig"; path = "Target Support Files/Pods-SnowballProject/Pods-SnowballProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B514AF0FAE839F888CA1B602 /* Pods-SnowballProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowballProject.release.xcconfig"; path = "Target Support Files/Pods-SnowballProject/Pods-SnowballProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		636831192C526B5000AD23B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C9CB6D2C77786B00F95B3C /* AlamofireNetworkActivityLogger in Frameworks */,
+				6377C3382C883F4D0081485C /* CryptoSwift in Frameworks */,
+				D60BA55099D211EA74F59B41 /* Pods_SnowballProject.framework in Frameworks */,
+				63C9CB4A2C7478FF00F95B3C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377C3242C843E6D0081485C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B560CBE5AE719568D0DDC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B93A320AF16F81BAFECF3F0 /* Pods_SnowballProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		624FB78AAEA1079FC86D4948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C9A1A997A66C66504F6DE52 /* Pods-SnowballProject.debug.xcconfig */,
+				B514AF0FAE839F888CA1B602 /* Pods-SnowballProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		632634D02C54154D0050A89B /* Approvements */ = {
+			isa = PBXGroup;
+			children = (
+				63BC020B2C554647002F2849 /* ApprovementsViewController.swift */,
+				63BC02112C55467F002F2849 /* ApprovementsTableCell.xib */,
+				63BC02132C55468E002F2849 /* ApprovementsTableCell.swift */,
+				636991282C56C01900967747 /* ApprovementsViewController.xib */,
+			);
+			path = Approvements;
+			sourceTree = "<group>";
+		};
+		632634D12C54155B0050A89B /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				63890ADA2C6E1E0D00A43170 /* FilesConfirmation */,
+				63890ACD2C6DF56700A43170 /* Script-Change-Set-PopUpList */,
+				63890AC42C6DF49100A43170 /* Action */,
+				63890ABB2C6DF3D400A43170 /* Environment */,
+				639FEFFF2C6961090047815D /* Files */,
+				639FEFFE2C6960FA0047815D /* Pipeline */,
+				639FEFFD2C6960F10047815D /* Detail */,
+				639FEFFC2C6960DE0047815D /* Change-Set */,
+				632634EC2C54180E0050A89B /* ScriptViewController.swift */,
+				632634ED2C54180E0050A89B /* ScriptViewController.xib */,
+				632634F02C5418510050A89B /* ScriptTableCell.swift */,
+				632634F12C5418510050A89B /* ScriptTableCell.xib */,
+				6372A45E2C5B59AA008DFAA2 /* ScriptMainDetailVC.xib */,
+				639FF0002C6961570047815D /* ScriptMainDetailVC.swift */,
+				63890AB92C6DF33B00A43170 /* ScriptCustomHeaderView.swift */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		632634D22C54156C0050A89B /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				63BC02032C5542B6002F2849 /* LogTableCell.xib */,
+				63BC02052C5542C9002F2849 /* LogTableCell.swift */,
+				63BC02072C5544D8002F2849 /* LogViewController.xib */,
+				63BC02092C554530002F2849 /* LogViewController.swift */,
+				6372A4532C5A40BB008DFAA2 /* LogShimmerTableCell.swift */,
+				6372A4552C5A40D1008DFAA2 /* LogShimmerTableCell.xib */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		632634D32C5415750050A89B /* Deploy */ = {
+			isa = PBXGroup;
+			children = (
+				6362EE042C6B2DB70066B948 /* Change-Set-PopUpList */,
+				6362EDFB2C6A3A990066B948 /* Environment */,
+				6362EDF22C6A36080066B948 /* Action */,
+				6371AC462C60B8CA00A13A23 /* Change-Set */,
+				6371AC442C60AEDB00A13A23 /* Detail */,
+				6371AC432C60AED400A13A23 /* Pipeline */,
+				632634D92C54168C0050A89B /* DeployViewController.swift */,
+				632634DA2C54168C0050A89B /* DeployViewController.xib */,
+				63BC01FD2C553F65002F2849 /* DeployTableCell.xib */,
+				63BC02012C55404E002F2849 /* DeployTableCell.swift */,
+				6373193D2C5CFD3F00F20395 /* DeployDetailMainVC.xib */,
+				6371AC4F2C60FDC800A13A23 /* DeployDetailMainVC.swift */,
+				6362EE0E2C6B36D70066B948 /* CustomHeaderView.swift */,
+			);
+			path = Deploy;
+			sourceTree = "<group>";
+		};
+		632634D42C54157F0050A89B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6372A44B2C5A281C008DFAA2 /* ShimmerView.swift */,
+				6368312A2C526B5100AD23B6 /* LaunchScreen.storyboard */,
+				636831332C526C2400AD23B6 /* LoginView.xib */,
+				63BC02302C554A07002F2849 /* LoginViewController.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		632634D52C5415940050A89B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6372A45B2C5A44D2008DFAA2 /* Model */,
+				632634D62C5415E70050A89B /* Common */,
+				632634D32C5415750050A89B /* Deploy */,
+				632634D22C54156C0050A89B /* Log */,
+				632634D12C54155B0050A89B /* Script */,
+				632634D02C54154D0050A89B /* Approvements */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		632634D62C5415E70050A89B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				636991242C56AD8F00967747 /* MainTabBarController.swift */,
+				636991262C56BF8200967747 /* MainTabBarController2.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		632993912C746BCE00400852 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				632993922C746BE600400852 /* BaseService.swift */,
+				63C9CB4D2C748D3500F95B3C /* LoginService.swift */,
+				63C9CB702C7BC4A900F95B3C /* RefreshTokenService.swift */,
+				63C9CB742C7C560600F95B3C /* ClearCacheService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		632993942C746E5100400852 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				632993952C746E6B00400852 /* BaseServiceContracts.swift */,
+				63C9CB4B2C748D2900F95B3C /* LoginContract.swift */,
+				63C9CB4F2C74AFA800F95B3C /* ContractBase.swift */,
+				63C9CB512C75B81D00F95B3C /* ApprovementContract.swift */,
+				63C9CB572C75E01C00F95B3C /* ScriptContract.swift */,
+				63C9CB5B2C75E03700F95B3C /* DeployContract.swift */,
+				63C9CB5F2C75E04D00F95B3C /* LogContract.swift */,
+				63C9CB722C7BC66200F95B3C /* RefreshTokenContract.swift */,
+				63C9CB762C7C593400F95B3C /* ClearCacheContract.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		6362EDF22C6A36080066B948 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				6362EDF32C6A361C0066B948 /* ActionCellRow.xib */,
+				6362EDF52C6A36250066B948 /* ActionCellRow.swift */,
+				6362EDF72C6A362E0066B948 /* ActionTableCell.swift */,
+				6362EDF92C6A363A0066B948 /* ActionTableCell.xib */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		6362EDFB2C6A3A990066B948 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				6362EDFC2C6A3AB50066B948 /* EnvironmentTableCell.xib */,
+				6362EDFE2C6A3AC00066B948 /* EnvironmentTableCell.swift */,
+				6362EE002C6A3ACA0066B948 /* EnvironmentRowCell.swift */,
+				6362EE022C6A3AD70066B948 /* EnvironmentRowCell.xib */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		6362EE042C6B2DB70066B948 /* Change-Set-PopUpList */ = {
+			isa = PBXGroup;
+			children = (
+				6362EE052C6B2DD20066B948 /* ChangeSetPopTable.xib */,
+				6362EE072C6B2DFF0066B948 /* ChangeSetPopTable.swift */,
+				6362EE092C6B2EBC0066B948 /* ChangeSetPopTableCell.swift */,
+				6362EE0B2C6B2EC80066B948 /* ChangeSetPopTableCell.xib */,
+			);
+			path = "Change-Set-PopUpList";
+			sourceTree = "<group>";
+		};
+		636831132C526B5000AD23B6 = {
+			isa = PBXGroup;
+			children = (
+				6368311E2C526B5000AD23B6 /* SnowballProject */,
+				6377C3282C843E6D0081485C /* SnowballProjectUITests */,
+				6368311D2C526B5000AD23B6 /* Products */,
+				624FB78AAEA1079FC86D4948 /* Pods */,
+				4B560CBE5AE719568D0DDC46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6368311D2C526B5000AD23B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6368311C2C526B5000AD23B6 /* SnowballProject.app */,
+				6377C3272C843E6D0081485C /* SnowballProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6368311E2C526B5000AD23B6 /* SnowballProject */ = {
+			isa = PBXGroup;
+			children = (
+				6377C3332C872A320081485C /* SQLite */,
+				6377C2FA2C805CFD0081485C /* SSLPinning */,
+				63C9CB612C7611C800F95B3C /* Adapter */,
+				632993942C746E5100400852 /* Contracts */,
+				632993912C746BCE00400852 /* Service */,
+				6369912B2C56C56800967747 /* Extensions */,
+				632634D52C5415940050A89B /* View */,
+				632634D42C54157F0050A89B /* Util */,
+				6368311F2C526B5000AD23B6 /* AppDelegate.swift */,
+				636831282C526B5100AD23B6 /* Assets.xcassets */,
+				6368312D2C526B5100AD23B6 /* Info.plist */,
+				63BC01FB2C553EE2002F2849 /* Main.storyboard */,
+				637332B52C6DDCAD00BA787A /* ScriptTraineeCell.xib */,
+				6329934E2C6F69E000400852 /* View.xib */,
+			);
+			path = SnowballProject;
+			sourceTree = "<group>";
+		};
+		6369912B2C56C56800967747 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6369912C2C56C58500967747 /* UIViewController+Extension.swift */,
+				636991302C57673B00967747 /* UITabBarController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6371AC432C60AED400A13A23 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				6371AC3B2C60A8C000A13A23 /* PipelineTableCell.xib */,
+				6371AC3D2C60A8E400A13A23 /* PipelineTableCell.swift */,
+				6371AC3F2C60A90D00A13A23 /* PipelineCellRow.xib */,
+				6371AC412C60AEAD00A13A23 /* PipelineCellRow.swift */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		6371AC442C60AEDB00A13A23 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6373193F2C5CFD6600F20395 /* DeployDetailViewCellTable.swift */,
+				638E63522C5F95F0007C4DFD /* DeployDetailCellRow.swift */,
+				638E63542C5F9627007C4DFD /* DeployDetailCellRow.xib */,
+				6373193B2C5CFD0800F20395 /* DeployDetailViewCellTable.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6371AC462C60B8CA00A13A23 /* Change-Set */ = {
+			isa = PBXGroup;
+			children = (
+				6371AC472C60B8D800A13A23 /* ChangeSetTableCell.xib */,
+				6371AC492C60B8FC00A13A23 /* ChangeSetTableCell.swift */,
+				6371AC4B2C60B91B00A13A23 /* ChangeSetCellRow.xib */,
+				6371AC4D2C60EA9500A13A23 /* ChangeSetCellRow.swift */,
+			);
+			path = "Change-Set";
+			sourceTree = "<group>";
+		};
+		6372A45B2C5A44D2008DFAA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6372A45C2C5A44E1008DFAA2 /* Status.swift */,
+				637319312C5B961200F20395 /* StatusS.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6377C2FA2C805CFD0081485C /* SSLPinning */ = {
+			isa = PBXGroup;
+			children = (
+				6377C2FB2C805D130081485C /* SSLPinningManager.swift */,
+				6377C3212C806FD10081485C /* PinningManager.swift */,
+			);
+			path = SSLPinning;
+			sourceTree = "<group>";
+		};
+		6377C3282C843E6D0081485C /* SnowballProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6377C3292C843E6D0081485C /* SnowballProjectUITests.swift */,
+				6377C32B2C843E6D0081485C /* SnowballProjectUITestsLaunchTests.swift */,
+			);
+			path = SnowballProjectUITests;
+			sourceTree = "<group>";
+		};
+		6377C3332C872A320081485C /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				6377C3342C872A930081485C /* DatabaseHelper.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		63890ABB2C6DF3D400A43170 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				63890ABC2C6DF3E200A43170 /* ScriptEnvironmentTableCell.swift */,
+				63890ABE2C6DF3EB00A43170 /* ScriptEnvironmentRowCell.swift */,
+				63890AC02C6DF3F500A43170 /* ScriptEnvironmentTableCell.xib */,
+				63890AC22C6DF40100A43170 /* ScriptEnvironmentRowCell.xib */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		63890AC42C6DF49100A43170 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				63890AC52C6DF4A500A43170 /* ScriptActionCellRow.xib */,
+				63890AC72C6DF4B200A43170 /* ScriptActionTableCell.xib */,
+				63890AC92C6DF4BE00A43170 /* ScriptActionTableCell.swift */,
+				63890ACB2C6DF4D000A43170 /* ScriptActionCellRow.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		63890ACD2C6DF56700A43170 /* Script-Change-Set-PopUpList */ = {
+			isa = PBXGroup;
+			children = (
+				63890ACE2C6DF58100A43170 /* ScriptChangeSetPopTable.swift */,
+				63890AD02C6DF58B00A43170 /* ScriptChangeSetPopTable.xib */,
+				63890AD22C6DF59900A43170 /* ScriptChangeSetPopTableCell.swift */,
+				63890AD42C6DF5A100A43170 /* ScriptChangeSetPopTableCell.xib */,
+			);
+			path = "Script-Change-Set-PopUpList";
+			sourceTree = "<group>";
+		};
+		63890ADA2C6E1E0D00A43170 /* FilesConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				632993502C711EA200400852 /* FilesConfirmationTableCell.xib */,
+				632993522C711ED000400852 /* FilesConfirmationTableCell.swift */,
+				632993542C7140DF00400852 /* FilesConfirmationCellRow.swift */,
+				632993562C7140EE00400852 /* FilesConfirmationCellRow.xib */,
+			);
+			path = FilesConfirmation;
+			sourceTree = "<group>";
+		};
+		639FEFFC2C6960DE0047815D /* Change-Set */ = {
+			isa = PBXGroup;
+			children = (
+				639FF0122C69642F0047815D /* ScriptChangeSetTableCell.swift */,
+				639FF0142C69643D0047815D /* ScriptChangeSetTableCell.xib */,
+				639FF0162C6964540047815D /* ScriptChangeSetCellRow.swift */,
+				639FF0182C69645F0047815D /* ScriptChangeSetCellRow.xib */,
+			);
+			path = "Change-Set";
+			sourceTree = "<group>";
+		};
+		639FEFFD2C6960F10047815D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				639FF0022C69619C0047815D /* ScriptDetailViewCellTable.swift */,
+				639FF0042C6961A90047815D /* ScriptDetailViewCellTable.xib */,
+				639FF0062C6961BB0047815D /* ScriptDetailCellRow.xib */,
+				639FF0082C6961C60047815D /* ScriptDetailCellRow.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		639FEFFE2C6960FA0047815D /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				639FF00A2C69630D0047815D /* ScriptPipelineTableCell.swift */,
+				639FF00C2C69631B0047815D /* ScriptPipelineTableCell.xib */,
+				639FF00E2C69632F0047815D /* ScriptPipelineCellRow.xib */,
+				639FF0102C69633B0047815D /* ScriptPipelineCellRow.swift */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		639FEFFF2C6961090047815D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				634244EE2C69FDD8003B6E9A /* ScriptFilesCellRow.swift */,
+				634244F22C69FDFB003B6E9A /* ScriptFilesCellRow.xib */,
+				63890AD62C6E19EF00A43170 /* ScriptFilesCellTable.xib */,
+				63890AD82C6E19FD00A43170 /* ScriptFilesCellTable.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		63C9CB612C7611C800F95B3C /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				63C9CB682C776E4700F95B3C /* Model */,
+				63C9CB622C7611E000F95B3C /* JWTAccessTokenInterceptor.swift */,
+				63C9CB662C77254900F95B3C /* TokenStore.swift */,
+				63C9CB6E2C7BC2CF00F95B3C /* SessionStore.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		63C9CB682C776E4700F95B3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6368311B2C526B5000AD23B6 /* SnowballProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636831302C526B5100AD23B6 /* Build configuration list for PBXNativeTarget "SnowballProject" */;
+			buildPhases = (
+				9E263E3AC0A4706B7B9770E1 /* [CP] Check Pods Manifest.lock */,
+				636831182C526B5000AD23B6 /* Sources */,
+				636831192C526B5000AD23B6 /* Frameworks */,
+				6368311A2C526B5000AD23B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnowballProject;
+			packageProductDependencies = (
+				63C9CB492C7478FF00F95B3C /* Alamofire */,
+				63C9CB6C2C77786B00F95B3C /* AlamofireNetworkActivityLogger */,
+				6377C3372C883F4D0081485C /* CryptoSwift */,
+			);
+			productName = SnowballProject;
+			productReference = 6368311C2C526B5000AD23B6 /* SnowballProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6377C3262C843E6D0081485C /* SnowballProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6377C3312C843E6D0081485C /* Build configuration list for PBXNativeTarget "SnowballProjectUITests" */;
+			buildPhases = (
+				6377C3232C843E6D0081485C /* Sources */,
+				6377C3242C843E6D0081485C /* Frameworks */,
+				6377C3252C843E6D0081485C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6377C32E2C843E6D0081485C /* PBXTargetDependency */,
+			);
+			name = SnowballProjectUITests;
+			productName = SnowballProjectUITests;
+			productReference = 6377C3272C843E6D0081485C /* SnowballProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		636831142C526B5000AD23B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6368311B2C526B5000AD23B6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					6377C3262C843E6D0081485C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6368311B2C526B5000AD23B6;
+					};
+				};
+			};
+			buildConfigurationList = 636831172C526B5000AD23B6 /* Build configuration list for PBXProject "SnowballProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 636831132C526B5000AD23B6;
+			packageReferences = (
+				63C9CB482C7478FF00F95B3C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				63C9CB6B2C77786B00F95B3C /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
+				6377C3322C8729BE0081485C /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				6377C3362C883E880081485C /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 6368311D2C526B5000AD23B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6368311B2C526B5000AD23B6 /* SnowballProject */,
+				6377C3262C843E6D0081485C /* SnowballProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6368311A2C526B5000AD23B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6362EDFA2C6A363A0066B948 /* ActionTableCell.xib in Resources */,
+				632634F22C5418510050A89B /* ScriptTableCell.xib in Resources */,
+				63890AC62C6DF4A500A43170 /* ScriptActionCellRow.xib in Resources */,
+				63890AD72C6E19EF00A43170 /* ScriptFilesCellTable.xib in Resources */,
+				6371AC482C60B8D800A13A23 /* ChangeSetTableCell.xib in Resources */,
+				63890AC82C6DF4B200A43170 /* ScriptActionTableCell.xib in Resources */,
+				632993572C7140EE00400852 /* FilesConfirmationCellRow.xib in Resources */,
+				636831292C526B5100AD23B6 /* Assets.xcassets in Resources */,
+				632634EE2C54180E0050A89B /* ScriptViewController.xib in Resources */,
+				6371AC402C60A90D00A13A23 /* PipelineCellRow.xib in Resources */,
+				6362EDF42C6A361C0066B948 /* ActionCellRow.xib in Resources */,
+				639FF0052C6961A90047815D /* ScriptDetailViewCellTable.xib in Resources */,
+				636991292C56C01900967747 /* ApprovementsViewController.xib in Resources */,
+				639FF0192C69645F0047815D /* ScriptChangeSetCellRow.xib in Resources */,
+				637332B62C6DDCAD00BA787A /* ScriptTraineeCell.xib in Resources */,
+				63890AC32C6DF40100A43170 /* ScriptEnvironmentRowCell.xib in Resources */,
+				638E63552C5F9627007C4DFD /* DeployDetailCellRow.xib in Resources */,
+				6372A4562C5A40D1008DFAA2 /* LogShimmerTableCell.xib in Resources */,
+				639FF0072C6961BB0047815D /* ScriptDetailCellRow.xib in Resources */,
+				6362EE0C2C6B2EC80066B948 /* ChangeSetPopTableCell.xib in Resources */,
+				63BC02082C5544D8002F2849 /* LogViewController.xib in Resources */,
+				639FF00D2C69631B0047815D /* ScriptPipelineTableCell.xib in Resources */,
+				6362EDFD2C6A3AB50066B948 /* EnvironmentTableCell.xib in Resources */,
+				63BC02122C55467F002F2849 /* ApprovementsTableCell.xib in Resources */,
+				6329934F2C6F69E000400852 /* View.xib in Resources */,
+				6373193E2C5CFD3F00F20395 /* DeployDetailMainVC.xib in Resources */,
+				6368312C2C526B5100AD23B6 /* Base in Resources */,
+				636831342C526C2400AD23B6 /* LoginView.xib in Resources */,
+				63890AD12C6DF58B00A43170 /* ScriptChangeSetPopTable.xib in Resources */,
+				63BC01FC2C553EE2002F2849 /* Main.storyboard in Resources */,
+				6371AC3C2C60A8C000A13A23 /* PipelineTableCell.xib in Resources */,
+				6362EE062C6B2DD20066B948 /* ChangeSetPopTable.xib in Resources */,
+				6372A45F2C5B59AA008DFAA2 /* ScriptMainDetailVC.xib in Resources */,
+				63890AC12C6DF3F500A43170 /* ScriptEnvironmentTableCell.xib in Resources */,
+				639FF00F2C69632F0047815D /* ScriptPipelineCellRow.xib in Resources */,
+				6371AC4C2C60B91B00A13A23 /* ChangeSetCellRow.xib in Resources */,
+				63BC02042C5542B6002F2849 /* LogTableCell.xib in Resources */,
+				6373193C2C5CFD0800F20395 /* DeployDetailViewCellTable.xib in Resources */,
+				6362EE032C6A3AD70066B948 /* EnvironmentRowCell.xib in Resources */,
+				639FF0152C69643D0047815D /* ScriptChangeSetTableCell.xib in Resources */,
+				632993512C711EA200400852 /* FilesConfirmationTableCell.xib in Resources */,
+				63BC01FE2C553F65002F2849 /* DeployTableCell.xib in Resources */,
+				634244F32C69FDFB003B6E9A /* ScriptFilesCellRow.xib in Resources */,
+				63890AD52C6DF5A100A43170 /* ScriptChangeSetPopTableCell.xib in Resources */,
+				632634DB2C54168C0050A89B /* DeployViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377C3252C843E6D0081485C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E263E3AC0A4706B7B9770E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnowballProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		636831182C526B5000AD23B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634244EF2C69FDD8003B6E9A /* ScriptFilesCellRow.swift in Sources */,
+				63BC02312C554A07002F2849 /* LoginViewController.swift in Sources */,
+				6371AC422C60AEAD00A13A23 /* PipelineCellRow.swift in Sources */,
+				63C9CB732C7BC66200F95B3C /* RefreshTokenContract.swift in Sources */,
+				639FF0112C69633B0047815D /* ScriptPipelineCellRow.swift in Sources */,
+				6362EE0F2C6B36D70066B948 /* CustomHeaderView.swift in Sources */,
+				63890AD92C6E19FD00A43170 /* ScriptFilesCellTable.swift in Sources */,
+				6362EE012C6A3ACA0066B948 /* EnvironmentRowCell.swift in Sources */,
+				63C9CB522C75B81D00F95B3C /* ApprovementContract.swift in Sources */,
+				639FF0132C69642F0047815D /* ScriptChangeSetTableCell.swift in Sources */,
+				636991252C56AD8F00967747 /* MainTabBarController.swift in Sources */,
+				639FF0172C6964540047815D /* ScriptChangeSetCellRow.swift in Sources */,
+				6372A4542C5A40BB008DFAA2 /* LogShimmerTableCell.swift in Sources */,
+				63C9CB672C77254900F95B3C /* TokenStore.swift in Sources */,
+				639FF0092C6961C60047815D /* ScriptDetailCellRow.swift in Sources */,
+				639FF0032C69619C0047815D /* ScriptDetailViewCellTable.swift in Sources */,
+				6371AC4E2C60EA9500A13A23 /* ChangeSetCellRow.swift in Sources */,
+				632993962C746E6B00400852 /* BaseServiceContracts.swift in Sources */,
+				6362EE082C6B2DFF0066B948 /* ChangeSetPopTable.swift in Sources */,
+				63890AD32C6DF59900A43170 /* ScriptChangeSetPopTableCell.swift in Sources */,
+				6362EDF62C6A36250066B948 /* ActionCellRow.swift in Sources */,
+				63BC020A2C554530002F2849 /* LogViewController.swift in Sources */,
+				63C9CB712C7BC4A900F95B3C /* RefreshTokenService.swift in Sources */,
+				632634DC2C54168C0050A89B /* DeployViewController.swift in Sources */,
+				63C9CB5C2C75E03700F95B3C /* DeployContract.swift in Sources */,
+				63BC02062C5542C9002F2849 /* LogTableCell.swift in Sources */,
+				639FF00B2C69630D0047815D /* ScriptPipelineTableCell.swift in Sources */,
+				632634F32C5418510050A89B /* ScriptTableCell.swift in Sources */,
+				6372A44C2C5A281C008DFAA2 /* ShimmerView.swift in Sources */,
+				6369912D2C56C58500967747 /* UIViewController+Extension.swift in Sources */,
+				63890ABA2C6DF33B00A43170 /* ScriptCustomHeaderView.swift in Sources */,
+				639FF0012C6961570047815D /* ScriptMainDetailVC.swift in Sources */,
+				63890ACF2C6DF58100A43170 /* ScriptChangeSetPopTable.swift in Sources */,
+				6377C3222C806FD10081485C /* PinningManager.swift in Sources */,
+				632993532C711ED000400852 /* FilesConfirmationTableCell.swift in Sources */,
+				63C9CB502C74AFA800F95B3C /* ContractBase.swift in Sources */,
+				63C9CB4C2C748D2900F95B3C /* LoginContract.swift in Sources */,
+				6371AC3E2C60A8E400A13A23 /* PipelineTableCell.swift in Sources */,
+				63C9CB4E2C748D3500F95B3C /* LoginService.swift in Sources */,
+				63890ABD2C6DF3E200A43170 /* ScriptEnvironmentTableCell.swift in Sources */,
+				63BC020C2C554647002F2849 /* ApprovementsViewController.swift in Sources */,
+				63C9CB752C7C560600F95B3C /* ClearCacheService.swift in Sources */,
+				6362EE0A2C6B2EBC0066B948 /* ChangeSetPopTableCell.swift in Sources */,
+				63890ACA2C6DF4BE00A43170 /* ScriptActionTableCell.swift in Sources */,
+				63890ACC2C6DF4D000A43170 /* ScriptActionCellRow.swift in Sources */,
+				63BC02142C55468E002F2849 /* ApprovementsTableCell.swift in Sources */,
+				6362EDF82C6A362E0066B948 /* ActionTableCell.swift in Sources */,
+				636831202C526B5000AD23B6 /* AppDelegate.swift in Sources */,
+				6377C3352C872A930081485C /* DatabaseHelper.swift in Sources */,
+				6362EDFF2C6A3AC00066B948 /* EnvironmentTableCell.swift in Sources */,
+				637319402C5CFD6600F20395 /* DeployDetailViewCellTable.swift in Sources */,
+				6377C2FC2C805D130081485C /* SSLPinningManager.swift in Sources */,
+				63C9CB582C75E01C00F95B3C /* ScriptContract.swift in Sources */,
+				63BC02022C55404E002F2849 /* DeployTableCell.swift in Sources */,
+				63C9CB772C7C593400F95B3C /* ClearCacheContract.swift in Sources */,
+				63C9CB602C75E04D00F95B3C /* LogContract.swift in Sources */,
+				63C9CB6F2C7BC2CF00F95B3C /* SessionStore.swift in Sources */,
+				636991272C56BF8200967747 /* MainTabBarController2.swift in Sources */,
+				6372A45D2C5A44E1008DFAA2 /* Status.swift in Sources */,
+				6371AC502C60FDC800A13A23 /* DeployDetailMainVC.swift in Sources */,
+				637319322C5B961200F20395 /* StatusS.swift in Sources */,
+				638E63532C5F95F0007C4DFD /* DeployDetailCellRow.swift in Sources */,
+				63890ABF2C6DF3EB00A43170 /* ScriptEnvironmentRowCell.swift in Sources */,
+				632634EF2C54180E0050A89B /* ScriptViewController.swift in Sources */,
+				6371AC4A2C60B8FC00A13A23 /* ChangeSetTableCell.swift in Sources */,
+				632993932C746BE600400852 /* BaseService.swift in Sources */,
+				636991312C57673B00967747 /* UITabBarController+Extension.swift in Sources */,
+				632993552C7140DF00400852 /* FilesConfirmationCellRow.swift in Sources */,
+				63C9CB632C7611E000F95B3C /* JWTAccessTokenInterceptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377C3232C843E6D0081485C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6377C32C2C843E6D0081485C /* SnowballProjectUITestsLaunchTests.swift in Sources */,
+				6377C32A2C843E6D0081485C /* SnowballProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6377C32E2C843E6D0081485C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6368311B2C526B5000AD23B6 /* SnowballProject */;
+			targetProxy = 6377C32D2C843E6D0081485C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6368312A2C526B5100AD23B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6368312B2C526B5100AD23B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6368312E2C526B5100AD23B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6368312F2C526B5100AD23B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		636831312C526B5100AD23B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C9A1A997A66C66504F6DE52 /* Pods-SnowballProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnowballProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.SnowballProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		636831322C526B5100AD23B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B514AF0FAE839F888CA1B602 /* Pods-SnowballProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnowballProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.SnowballProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6377C32F2C843E6D0081485C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.SnowballProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnowballProject;
+			};
+			name = Debug;
+		};
+		6377C3302C843E6D0081485C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.SnowballProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnowballProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		636831172C526B5000AD23B6 /* Build configuration list for PBXProject "SnowballProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6368312E2C526B5100AD23B6 /* Debug */,
+				6368312F2C526B5100AD23B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636831302C526B5100AD23B6 /* Build configuration list for PBXNativeTarget "SnowballProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636831312C526B5100AD23B6 /* Debug */,
+				636831322C526B5100AD23B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6377C3312C843E6D0081485C /* Build configuration list for PBXNativeTarget "SnowballProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6377C32F2C843E6D0081485C /* Debug */,
+				6377C3302C843E6D0081485C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6377C3322C8729BE0081485C /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		6377C3362C883E880081485C /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.3;
+			};
+		};
+		63C9CB482C7478FF00F95B3C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		63C9CB6B2C77786B00F95B3C /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/konkab/AlamofireNetworkActivityLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6377C3372C883F4D0081485C /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6377C3362C883E880081485C /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		63C9CB492C7478FF00F95B3C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63C9CB482C7478FF00F95B3C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		63C9CB6C2C77786B00F95B3C /* AlamofireNetworkActivityLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63C9CB6B2C77786B00F95B3C /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */;
+			productName = AlamofireNetworkActivityLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 636831142C526B5000AD23B6 /* Project object */;
+}

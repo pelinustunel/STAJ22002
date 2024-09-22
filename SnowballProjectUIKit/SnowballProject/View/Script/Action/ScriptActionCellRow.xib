@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScriptActionCellRow" rowHeight="94" id="TUt-T9-nUT" userLabel="ScriptActionCellRow" customClass="ScriptActionCellRow" customModule="SnowballProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TUt-T9-nUT" id="FSK-AW-M5l">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-nv-h4Y">
+                        <rect key="frame" x="8" y="2" width="202" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-ed-hVk">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMg-Ky-LME">
+                                        <rect key="frame" x="8" y="10" width="184" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.79215686269999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YMg-Ky-LME" secondAttribute="bottom" constant="10" id="HEO-iw-dEp"/>
+                                    <constraint firstAttribute="trailing" secondItem="YMg-Ky-LME" secondAttribute="trailing" constant="10" id="PdH-nd-eMf"/>
+                                    <constraint firstItem="YMg-Ky-LME" firstAttribute="leading" secondItem="zV0-ed-hVk" secondAttribute="leading" constant="8" id="ai1-Ka-W9e"/>
+                                    <constraint firstItem="YMg-Ky-LME" firstAttribute="top" secondItem="zV0-ed-hVk" secondAttribute="top" constant="10" id="qPG-XA-lIN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tSW-nv-h4Y" firstAttribute="leading" secondItem="FSK-AW-M5l" secondAttribute="leading" constant="8" id="0tg-Ek-J7y"/>
+                    <constraint firstAttribute="trailing" secondItem="tSW-nv-h4Y" secondAttribute="trailing" constant="8" id="5MT-GR-MbM"/>
+                    <constraint firstAttribute="bottom" secondItem="tSW-nv-h4Y" secondAttribute="bottom" constant="2" id="6MQ-Tq-6Jf"/>
+                    <constraint firstItem="tSW-nv-h4Y" firstAttribute="top" secondItem="FSK-AW-M5l" secondAttribute="top" constant="2" id="yFT-uB-Yfc"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionLabel" destination="YMg-Ky-LME" id="SmI-ci-7jR"/>
+                <outlet property="containerView" destination="tSW-nv-h4Y" id="h4M-t8-fq2"/>
+            </connections>
+            <point key="canvasLocation" x="58.015267175572518" y="9.1549295774647899"/>
+        </tableViewCell>
+    </objects>
+</document>
